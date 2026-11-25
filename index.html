@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Time</title>
+  <style>
+    :root {
+      --night: #1e1d4f;
+      --indigo: #2b2f6b;
+      --violet: #6a4fb3;
+      --rose: #ff9fb8;
+      --gold: #ffd66b;
+      --cream: #fff6d6;
+      --text: #e9e4ff;
+      --muted: #b9b1e0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--night) 0%, var(--indigo) 45%, #4a3a8f 80%, #7b4f94 100%);
+      background-attachment: fixed;
+      color: var(--text);
+      font: 16px/1.8 Georgia, "Times New Roman", serif;
+      min-height: 100vh;
+    }
+
+    .sky {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 26px 28px;
+      position: relative;
+    }
+
+    .sky::before {
+      content: "";
+      position: absolute;
+      inset: 16px 26px auto auto;
+      width: 160px;
+      height: 90px;
+      background:
+        radial-gradient(circle at 10% 70%, var(--cream) 0 2px, transparent 3px),
+        radial-gradient(circle at 38% 30%, var(--cream) 0 2.5px, transparent 3.5px),
+        radial-gradient(circle at 66% 55%, var(--cream) 0 2px, transparent 3px),
+        radial-gradient(circle at 92% 18%, var(--gold) 0 3px, transparent 4px);
+      opacity: 0.85;
+    }
+
+    .app {
+      font: 600 12px/1 -apple-system, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      font-style: italic;
+      line-height: 1.15;
+      color: var(--cream);
+      margin: 12px 0 18px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 620px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 8px 26px 40px;
+    }
+
+    section {
+      padding: 26px 0 22px;
+      border-top: 1px solid rgba(233, 228, 255, 0.14);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 10px;
+    }
+
+    h2 .no {
+      flex: none;
+      display: inline-grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      background: var(--gold);
+      color: var(--indigo);
+      font: 700 11px/1 -apple-system, "Helvetica Neue", Arial, sans-serif;
+      padding-top: 6px;
+    }
+
+    p + p,
+    p + ul,
+    ul + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    li::marker {
+      color: var(--rose);
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 22px 26px 56px;
+      border-top: 1px solid rgba(233, 228, 255, 0.14);
+      font: 14px/1.7 -apple-system, "Helvetica Neue", Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    footer nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header class="sky">
+    <div class="app">A calm star-chart puzzle</div>
+    <h1>Cozy Time</h1>
+    <p class="intro">Read a little star chart, find its stars in a busy night sky and connect them into twelve constellations drawn in stardust: a sleepy fox, a drifting whale, a dancing crane and more.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2><span class="no">I</span>Documents</h2>
+      <ul>
+        <li><a href="privacy/">Privacy Policy</a></li>
+        <li><a href="terms/">Terms of Use</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="no">II</span>Contact</h2>
+      <p>Email: <a href="mailto:Rishikavohra@icloud.com">Rishikavohra@icloud.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cozy Time</p>
+  </footer>
+</body>
+</html>
